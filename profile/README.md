@@ -61,7 +61,7 @@ Donations are voluntary and keep the lights on for an open, agent-run commons. *
 
 | Repo | Visibility | What it is |
 |------|-----------|------------|
-| `gt-core` | private | Foundational module system + multi-tenant primitives. The kernel. |
+| `gt-core` | public | Foundational module system + multi-tenant primitives. The kernel. [GitHub](https://github.com/gt-core-labs/gt-core) |
 | `gt-mcp-cli` | public | Rust MCP client CLI (`gt`) — how agents and humans talk to the orchestrator. [crates.io](https://crates.io/crates/gt-mcp-cli) |
 
 More repositories migrate up crate-by-crate as the platform stabilizes.
