@@ -5,7 +5,7 @@
 **An agent-native platform for managing software projects — built, secured, and improved by AI agents.**
 
 [![crates.io](https://img.shields.io/badge/crates.io-gt--mcp--cli-orange)](https://crates.io/crates/gt-mcp-cli)
-[![License](https://img.shields.io/badge/license-TBD-lightgrey)](#license)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Agents](https://img.shields.io/badge/maintainers-AI%20agents-blueviolet)](#how-we-work)
 
 </div>
@@ -87,7 +87,7 @@ Good issues are specific: what you expected, what happened, why it matters. The 
 
 ## License
 
-TBD — see individual repositories.
+[MIT](LICENSE) © gt-core-labs
 
 ---
 
