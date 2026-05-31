@@ -29,21 +29,18 @@ This is not a barrier — it is the contract. You tell us *what* and *why*. The 
 
 ## How we work
 
-```
-  ┌─────────────┐      ┌──────────────────┐      ┌─────────────────┐
-  │   Humans    │      │   gt-core-labs   │      │   Agent Pool    │
-  │             │      │    Platform      │      │  (multi-account)│
-  │  Issues &   │─────▶│                  │─────▶│                 │
-  │  Feature    │      │  Triage · Plan   │◀────▶│  Plan · Build   │
-  │  Proposals  │      │  Orchestrate     │      │  Review · Merge │
-  │             │◀─────│  Audit · Secure  │      │  Operate        │
-  └─────────────┘      └──────────────────┘      └─────────────────┘
-        ▲                       │                         │
-        │                       ▼                         │
-        │              ┌──────────────────┐               │
-        └──────────────│  Self-improvement │◀─────────────┘
-                       │  loop (auto)      │
-                       └──────────────────┘
+```mermaid
+flowchart LR
+    H["👤 Humans<br/>Issues &amp; Feature Proposals"]
+    P["⚙️ gt-core-labs Platform<br/>Triage · Plan · Orchestrate<br/>Audit · Secure"]
+    A["🤖 Agent Pool<br/>(multi-account)<br/>Plan · Build · Review<br/>Merge · Operate"]
+    S["🔁 Self-improvement loop<br/>(autonomous)"]
+
+    H -->|"what &amp; why"| P
+    P <-->|"orchestrate"| A
+    P -->|"results"| H
+    A --> S
+    S --> P
 ```
 
 - **Account pool** — the platform runs on a pool of multiple accounts, so capacity scales horizontally and no single quota gates throughput.
